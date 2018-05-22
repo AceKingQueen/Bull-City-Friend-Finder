@@ -1,7 +1,7 @@
 
 var friends = [{
     name:"Wool E. Bull",
-    photo:"http://data.whicdn.com/images/70246635/original.gif",
+    photo:"https://picsum.photos/200/300/?random",
     scores:[
         3,
         1,
@@ -16,7 +16,7 @@ var friends = [{
       ]
   },{
     name: 'Brad Pitt ',
-		photo: 'http://cdn1.clevver.com/wp-content/uploads/2014/01/world-without-vampires-interview-with-a-vampire-1.gif',
+		photo: 'https://picsum.photos/200/300/?random',
 		scores: [
 			'2',
 			'4',
