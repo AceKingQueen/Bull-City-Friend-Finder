@@ -32,7 +32,7 @@ var friends = [{
   },
   {
     name: "Monica Geller",
-    photo: "https://media.giphy.com/media/beYVvBUHy1Gla/giphy.gif",
+    photo: "https://picsum.photos/200/300/?random",
     scores: [
       "3",
       "3",
@@ -48,7 +48,7 @@ var friends = [{
   },
   {
     name:"Donald",
-    photo:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
+    photo:"https://picsum.photos/200/300/?random",
     scores:[
         3,
         1,
@@ -63,7 +63,7 @@ var friends = [{
       ]
   },{
     name:"Tom Cruise",
-    photo:"https://i.pinimg.com/originals/d4/c2/00/d4c200c9ed401c0fb445b0f56d2b09a7.jpg",
+    photo:"https://picsum.photos/200/300/?random",
     scores:[
         3,
         1,
