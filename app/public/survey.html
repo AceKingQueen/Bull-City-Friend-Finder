@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Bull City Survey Questions</title>
-  <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
@@ -18,7 +17,7 @@
 <body>
 
 
-  <div class="quiz-container">
+  <div class="survey-container">
 
     <h1>Bull City Friend-Finder</h1>
 
@@ -50,7 +49,6 @@
         <h5>1. Where is the best hamburger in town?</h5>
       </label>
       <select class="chosen-select custom-select mb-3" id="q1">
-
         <option value="1">Only Burger</option>
         <option value="2">Dain's</option>
         <option value="3">Cookout</option>
@@ -87,9 +85,8 @@
       </label>
       <select class="custom-select custom-select mb-3" id="q4">
 
-        <option value="1">"
-          < 2 "</option>
-        <option value="2 ">"> 3"</option>
+        <option value="1">2 or less</option>
+        <option value="2 ">More than 3</option>
         <option value="3">What's Runaway?</option>
       </select>
     </div>
@@ -180,12 +177,26 @@
       </div>
     </footer>
 
+     <!-- Modal Trigger -->
+  <!-- <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+
+  <! Modal Structure -->
+  <!-- <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div> --> 
+
     <!-- Modal -->
-    <div id="bestFriendModal" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+    <!-- <div id="bestFriendModal" class="modal fade" role="dialog">
+      <div class="modal-dialog"> -->
 
         <!-- Modal content-->
-        <div class="modal-content">
+        <!-- <div class="modal-content">
           <div class="modal-heade	r">
             <button type="button" class="close" data-dismiss="modal">&times;</button>
             <h3 class="modal-title">
@@ -205,18 +216,15 @@
         </div>
 
       </div>
-    </div>
+    </div> -->
 
   </div>
-  <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
-
 </body>
-
 </html>
 
 <script type="text/javascript">  
+
   //when user clicks submit button
   $("#submit").on("click", function (event) {
 
@@ -225,7 +233,7 @@
     var newUser = {
       userName: $("#user-name").val().trim(),
       userPhoto: $("#user-photo").val().trim(),
-      userscores: [
+      userScores: [
         $("#q1").val(),
         $("#q2").val(),
         $("#q3").val(),
@@ -235,7 +243,7 @@
         $("#q7").val(),
         $("#q8").val(),
         $("#q9").val(),
-        $("#q10").val(),
+        $("#q10").val()
       ]
     };
 
@@ -243,13 +251,14 @@
 
     $.post("/api/friends", newUser, function (data) {
 
-      console.log(data)
+      // console.log(data)
 
       $("#bestFriendName").text(data.name);
 
       $('#bestFriendImg').attr("src", data.photo);
+
       // Show the modal with the best match 
-      $("#bestFriendModal").modal('toggle');
+      // $("#bestFriendModal").modal('toggle');
     })
   })
 </script>
