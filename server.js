@@ -13,6 +13,9 @@ var PORT = process.env.PORT || 8080;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+//get css file up and running
+app.use(express.static(__dirname + '/app/public'))
+
 // ROUTER
 require("./app/routing/apiRoutes")(app);
 require("./app/routing/htmlRoutes")(app);
