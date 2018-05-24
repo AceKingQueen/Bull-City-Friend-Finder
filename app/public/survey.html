@@ -179,9 +179,9 @@
   <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#exampleModal">
 Find Your Friends</button>
-
+</div>
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -195,13 +195,12 @@ Find Your Friends</button>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
       </div>
     </div>
   </div>
 </div>
 
-</div>
+
 
 </body>
 </html>
@@ -243,4 +242,9 @@ Find Your Friends</button>
 
     })
   })
+
+  $('#exampleModal').on('shown.bs.modal', function() {
+  $('#myInput').focus()
+})
+
 </script>
