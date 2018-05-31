@@ -1,42 +1,42 @@
 
 var friends = [{
-    name:"Wool E. Bull",
-    photo:"https://picsum.photos/200/300/?random",
+    name: "Wool E. Bull",
+    photo: "https://picsum.photos/200/300/?random",
     scores:[
-        3,
-        1,
-        2,
-        4,
-        5,
-        1,
-        2,
-        5,
-        4,
-        1
+        "3",
+        "1",
+        "2",
+        "2",
+        "3",
+        "1",
+        "2",
+        "2",
+        "3",
+        "1"
       ]
   },{
-    name: 'Brad Pitt ',
+    name: "Bill Bell",
 		photo: 'https://picsum.photos/200/300/?random',
 		scores: [
 			'2',
-			'4',
+			'3',
+			'2',
 			'1',
-			'1',
-			'1',
+			'3',
 			'1',
 			'1',
 			'2',
 			'1',
-			'5'
+			'2'
 		]
   },
   {
-    name: "Monica Geller",
+    name: "Crash Davis",
     photo: "https://picsum.photos/200/300/?random",
     scores: [
       "3",
       "3",
-      "4",
+      "1",
       "2",
       "2",
       "1",
@@ -47,34 +47,34 @@ var friends = [{
     ]
   },
   {
-    name:"Donald",
-    photo:"https://picsum.photos/200/300/?random",
+    name: "Benjamin Duke",
+    photo: "https://picsum.photos/200/300/?random",
     scores:[
-        3,
-        1,
-        2,
-        4,
-        1,
-        1,
-        2,
-        3,
-        4,
-        5
+        "3",
+        "1",
+        "2",
+        "1",
+        "1",
+        "1",
+        "2",
+        "3",
+        "3",
+        "2"
       ]
   },{
-    name:"Tom Cruise",
+    name:"Sarah P. Duke",
     photo:"https://picsum.photos/200/300/?random",
     scores:[
-        3,
-        1,
-        2,
-        4,
-        1,
-        1,
-        2,
-        3,
-        4,
-        5
+        "3",
+        "1",
+        "2",
+        "2",
+        "1",
+        "1",
+        "2",
+        "3",
+        "2",
+        "1"
       ]
   }]
 
