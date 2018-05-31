@@ -1,7 +1,7 @@
 
 var friends = [{
     name: "Wool E. Bull",
-    photo: "https://picsum.photos/200/300/?random",
+    photo: "https://pbs.twimg.com/profile_images/524589911911841792/UGPImb_I.jpeg",
     scores:[
         "3",
         "1",
@@ -15,8 +15,8 @@ var friends = [{
         "1"
       ]
   },{
-    name: "Bill Bell",
-		photo: 'https://picsum.photos/200/300/?random',
+    name: "Bill Bell - former mayor of Durham",
+		photo: 'https://image.isu.pub/170127164139-5e5dbc04d6108d7a2ea48e3b98aa7dba/jpg/page_1_thumb_large.jpg',
 		scores: [
 			'2',
 			'3',
@@ -32,7 +32,7 @@ var friends = [{
   },
   {
     name: "Crash Davis",
-    photo: "https://picsum.photos/200/300/?random",
+    photo: "https://assets.bigcartel.com/product_images/198047893/12_-_Crash_Davis.jpg",
     scores: [
       "3",
       "3",
@@ -48,7 +48,7 @@ var friends = [{
   },
   {
     name: "Benjamin Duke",
-    photo: "https://picsum.photos/200/300/?random",
+    photo: "https://cdn.lib.unc.edu/commemorative-landscapes/media/monument/221_full.jpg",
     scores:[
         "3",
         "1",
@@ -63,7 +63,7 @@ var friends = [{
       ]
   },{
     name:"Sarah P. Duke",
-    photo:"https://picsum.photos/200/300/?random",
+    photo:"https://library.duke.edu/digitalcollections/media/jpg/bnduke/med/bnduke_sarahpduke_old.jpg",
     scores:[
         "3",
         "1",
