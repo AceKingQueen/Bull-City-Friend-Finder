@@ -9,18 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
- 
+
   <link rel="stylesheet" href="style.css">
-  
+
 </head>
 
 <body>
 
-
   <div class="survey-container">
 
     <h1>Bull City Friend-Finder</h1>
-
 
     <form>
       <div class="form-group">
@@ -33,7 +31,7 @@
         <input type="photo" class="form-control" id="user-photo" placeholder="use the link below if you'd like a randomly generated picture">
         <small id="emailHelp" class="form-text text-muted">https://picsum.photos/200/300/?random</small>
       </div>
-  
+
     </form>
 
     <div class="form-group">
@@ -122,7 +120,8 @@
     <div class="form-group">
       <label for="exampleFormControlSelect1">
         <h5>8. The last 3 questions pertain to Durham's incredible food and drink scene. Pick your favorite spot to meet friends
-          out:</h5>
+          out:
+        </h5>
       </label>
       <select class="custom-select custom-select mb-3" id="q8">
 
@@ -166,32 +165,35 @@
       </div>
     </footer>
 
-  <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#modal1">
-Find Your Friends</button>
-</div>
-
-<div id="exampleModal" class="modal fade" role="dialog">
-  <div class="modal-dialog"> 
-
-<div class="modal-content">
-  <div class="modal-header">
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
-    <h3 class="modal-title"><strong>Best Match</strong></h3>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" id="submit" data-toggle="modal" data-target="#modal1">
+      Find Your Friends</button>
   </div>
 
-<div class="modal-body">
-  <h2 id="bestFriendName"></h2>
-<img id="bestFriendImg" src="https://picsum.photos/200/300/?random" alt=""  height="250" width="250">
-<span id="audio"></span>
-</div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-  </div>
-</div>
+  <div id="exampleModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">
+            <strong>Best Match</strong>
+          </h3>
+        </div>
+
+        <div class="modal-body">
+          <h2 id="bestFriendName"></h2>
+          <img id="bestFriendImg" src="https://picsum.photos/200/300/?random" alt="" height="250" width="250">
+          <span id="audio"></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
 
 
 </body>
+
 </html>
 
 <script type="text/javascript">  
@@ -228,14 +230,7 @@ Find Your Friends</button>
 
       $('#exampleModal').modal('toggle')
 
-    }) 
-    //  $('#submit').leanModal();
+    })
   });
-
-  
-
-//   $('#exampleModal').on('shown.bs.modal', function() {
-//   $('#myInput').focus()
-// })
 
 </script>

@@ -9,7 +9,6 @@ module.exports = function(app) {
       });
     
       app.post("/api/friends",function(req,res){
-        // console.log(req.body);
 
         var newFriend = req.body;
         var newFriendScore = req.body.userScores;
